@@ -4,6 +4,7 @@ let trackedAttr = attrDecorator(tracked);
 
 class ApplicationRecord extends Model {
   static baseUrl = '/';
+  // static baseUrl = 'http://localhost:3000/';
   static apiNamespace = 'api/v1';
 
   @tracked

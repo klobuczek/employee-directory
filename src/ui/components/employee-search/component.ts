@@ -55,7 +55,7 @@ export default class EmployeeSearch extends BaseComponent {
     if (e) e.preventDefault();
 
     let scope = Employee
-      .includes({ current_position: 'department' })
+      .includes({ positions: 'department' })
       .order(this.sort)
       .stats({ total: 'count' })
       .page(this.currentPage)
